@@ -27,6 +27,7 @@ public class hehe extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -40,6 +41,10 @@ public class hehe extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("LOG IN");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 140, 40));
+
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("DO YOU HAVE ANY ACCOUNT?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 356, -1, 20));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, 210, 30));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 210, 30));
 
@@ -61,7 +66,7 @@ public class hehe extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 210, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 380, 210, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gamer\\Downloads\\pangalanankona.jpg")); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, -20, -1, -1));
@@ -122,6 +127,7 @@ public class hehe extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
