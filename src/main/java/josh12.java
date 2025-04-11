@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -27,10 +30,21 @@ public class josh12 extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        lbl1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        txt1 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        txt2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        txt3 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -38,26 +52,133 @@ public class josh12 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Vivaldi", 3, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 0));
         jLabel2.setText("BiTe Me CaFe");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 0, -1, 50));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, -1, 50));
 
+        jLabel3.setFont(new java.awt.Font("Segoe Print", 3, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("menu");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, -1, -1));
 
-        jLabel4.setText("cafe latte");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, -1, -1));
+        lbl1.setFont(new java.awt.Font("Segoe UI Symbol", 3, 12)); // NOI18N
+        lbl1.setForeground(new java.awt.Color(255, 255, 255));
+        lbl1.setText("[1]cafe latte-75.00");
+        getContentPane().add(lbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 110, -1));
 
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText(" [2]americano-80.00");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 120, -1));
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI Emoji", 3, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("[3]cappuccino-80.00");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 120, 20));
+        getContentPane().add(txt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 90, -1));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("[4]macchiato-79.00");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 120, 20));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("[6]flat white-90.00");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, -1, -1));
+
+        jLabel11.setText("order");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, -1, -1));
+
+        jButton2.setText("confirm");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, -1, -1));
+
+        jLabel10.setText("choose from the menu");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("[5]Espresso-79.00");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 100, 20));
+
+        jLabel12.setText("QUANTITY");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 196, -1, 10));
+        getContentPane().add(txt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 90, -1));
+
+        jButton1.setText("CHANGE");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, -1, -1));
+
+        txt3.setEnabled(false);
+        getContentPane().add(txt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, 80, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gamer\\Downloads\\shesh.jpg")); // NOI18N
         jLabel6.setText("jLabel6");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\CL3-PC30\\Pictures\\kope.jpg")); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 430));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 580, 350));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        int money = Integer.parseInt(txt2.getText());
+                 int cafelatte = 75;
+         int y = Integer.parseInt(txt2.getText());
+      int total = y * cafelatte;
+       
+     int change = total - money;
+        JOptionPane.showMessageDialog(null, "change"+ change, "total", JOptionPane.INFORMATION_MESSAGE);
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+        int x = Integer.parseInt(txt1.getText());
+        
+        if(x==1)
+        {
+         JOptionPane.showMessageDialog(null, "the price cafelatte is 75", "cafeteria", JOptionPane.INFORMATION_MESSAGE);
+            int quantity = Integer.parseInt(txt2.getText());
+          int cafelatte = 75;
+         
+        int results = quantity * cafelatte;
+         JOptionPane.showMessageDialog(null, "total is"+ results, "cafeteria", JOptionPane.INFORMATION_MESSAGE);
+        lbl1.setText(""+ results);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }  
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -95,11 +216,22 @@ public class josh12 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lbl1;
+    private javax.swing.JTextField txt1;
+    private javax.swing.JTextField txt2;
+    private javax.swing.JTextField txt3;
     // End of variables declaration//GEN-END:variables
 }
